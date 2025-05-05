@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cybersikkerhedsvalg</title>
+  <link rel="stylesheet" href="style.css"> <!-- SCSS-kompileret fil -->
+</head>
+<body>
+
+  <!-- Startskærm -->
+  <section id="start-screen">
+    <h1>Velkommen til Cybersikkerheds-testen</h1>
+    <p>Forestil dig dette scenario:</p>
+    <p>Du modtager en e-mail fra “Din Bank”, som beder dig opdatere dine oplysninger.</p>
+    <p>Hvad gør du?</p>
+    <button onclick="goToChoice('klik')">Jeg klikker på linket</button>
+    <button onclick="goToChoice('slet')">Jeg sletter e-mailen</button>
+    <button onclick="goToChoice('undersøg')">Jeg undersøger mailen nærmere</button>
+  </section>
+
+  <!-- Resultatskærme -->
+  <section id="result-klik" class="result hidden">
+    <h2>Ups... Du blev snydt</h2>
+    <p>Det var et phishingforsøg. Dine data blev stjålet.</p>
+    <p>Ægte banker beder aldrig om følsomme oplysninger via e-mail.</p>
+  </section>
+
+  <section id="result-slet" class="result hidden">
+    <h2>Du slap uden skrammer</h2>
+    <p>Du undgik faren, men lærte måske ikke så meget af oplevelsen.</p>
+  </section>
+
+  <section id="result-undersøg" class="result hidden">
+    <h2>Godt klaret!</h2>
+    <p>Du undersøgte afsenderen og kontaktede banken direkte. Du undgik svindel.</p>
+  </section>
+
+  <!-- Feedback-skærm med gemt valg -->
+  <section id="feedback-screen" class="hidden">
+    <h2>Dine valg</h2>
+    <p id="feedback-text">...</p>
+    <button onclick="resetExperience()">Prøv igen</button>
+  </section>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
