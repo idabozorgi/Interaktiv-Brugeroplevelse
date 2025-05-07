@@ -11,7 +11,7 @@ Formålet er at formidle viden om datasikkerhed gennem et interaktivt scenarie, 
 - Simpel JavaScript flowstyring
 
 ## Live demo
-🌐 [Se projektet live her](https://idabozorgi.dk)
+🌐 [Se projektet live her](https://idabozorgi.com)
 
 ## Teknologier
 - HTML
